@@ -1,3 +1,3 @@
 variable "prefix" {
-  default = "contosolab"
+  default = "terraformlab"
 }

@@ -1,21 +1,21 @@
-/*
-resource "azurerm_network_interface" "ContosoLabMain" {
+
+resource "azurerm_network_interface" "TerraformLabMain" {
    name                = "${var.prefix}-nic"
-   location            = "${azurerm_resource_group.ContosoLabMain.location}"
-   resource_group_name = "${azurerm_resource_group.ContosoLabMain.name}"
+   location            = "${azurerm_resource_group.TerraformLabMain.location}"
+   resource_group_name = "${azurerm_resource_group.TerraformLabMain.name}"
   
    ip_configuration {
      name                          = "testconfiguration1"
-     subnet_id                     = "${azurerm_subnet.ContosoLabMainSubnet_server.id}"
+     subnet_id                     = "${azurerm_subnet.TerraformLabMainSubnet_server.id}"
      private_ip_address_allocation = "Dynamic"
    }
  }
 
- resource "azurerm_virtual_machine" "ContosoLabMain" {
+ resource "azurerm_virtual_machine" "TerraformLabMain" {
    name                  = "${var.prefix}-vm"
-   location              = "${azurerm_resource_group.ContosoLabMain.location}"
-   resource_group_name   = "${azurerm_resource_group.ContosoLabMain.name}"
-   network_interface_ids = ["${azurerm_network_interface.ContosoLabMain.id}"]
+   location              = "${azurerm_resource_group.TerraformLabMain.location}"
+   resource_group_name   = "${azurerm_resource_group.TerraformLabMain.name}"
+   network_interface_ids = ["${azurerm_network_interface.TerraformLabMain.id}"]
    vm_size               = "Standard_DS1_v2"
 
    # Uncomment this line to delete the OS disk automatically when deleting the VM
@@ -49,4 +49,3 @@ resource "azurerm_network_interface" "ContosoLabMain" {
      department = "ICS"
    }
 } 
-*/
