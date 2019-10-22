@@ -1,4 +1,4 @@
-/*
+
 resource "azurerm_network_security_group" "TerraformLabMain" {
   name                = "TerraformLabMainSecurityGroup"
   location            = "${azurerm_resource_group.TerraformLabMain.location}"
@@ -54,4 +54,3 @@ resource "azurerm_subnet_network_security_group_association" "TerraformLabMainSG
   subnet_id                 = "${azurerm_subnet.TerraformLabMainSubnet_otherservices.id}"
   network_security_group_id = "${azurerm_network_security_group.TerraformLabMain.id}"
 }
-*/
