@@ -1,3 +1,5 @@
+/*Terraform Cloud with GitHub */
+
 terraform {
     backend "remote" {
         organization = "InsightItaly"
@@ -7,6 +9,7 @@ terraform {
         }
     }
 }
+
 
 provider "azurerm" {
     subscription_id = "${var.TF_VAR_ARM_SUBSCRIPTION_ID}"
