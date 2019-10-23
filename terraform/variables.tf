@@ -1,6 +1,7 @@
+
 variable "TF_VAR_LOCATION" {
   default = "westeurope"
-}
+} 
 variable "TF_VAR_ARM_SUBSCRIPTION_ID" {
     description = "Main subscrption for Azure provider"
 }
