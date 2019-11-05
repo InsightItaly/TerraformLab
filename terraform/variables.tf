@@ -1,4 +1,3 @@
-
 variable "TF_VAR_LOCATION" {
   default = "westeurope"
 } 

@@ -1,5 +1,5 @@
 /*Terraform Cloud with GitHub */
-
+/*
 terraform {
     backend "remote" {
         organization = "InsightItaly"
@@ -9,7 +9,7 @@ terraform {
         }
     }
 }
-
+*/
 
 provider "azurerm" {
     subscription_id = "${var.TF_VAR_ARM_SUBSCRIPTION_ID}"
@@ -17,3 +17,4 @@ provider "azurerm" {
     client_secret = "${var.TF_VAR_CLIENT_SECRET}"
     tenant_id = "${var.TF_VAR_TENANT_ID}"
 }
+
