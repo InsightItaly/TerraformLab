@@ -1,4 +1,4 @@
-/*
+
 resource "azurerm_network_interface" "TerraformLabMain" {
    name                = "${var.prefix}-nic"
    location            = "${azurerm_resource_group.TerraformLabMain.location}"
@@ -49,4 +49,3 @@ resource "azurerm_network_interface" "TerraformLabMain" {
      department = "ICS"
    }
 } 
-*/
