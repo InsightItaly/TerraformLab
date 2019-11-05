@@ -4,7 +4,7 @@ resource "azurerm_resource_group" "TerraformLabMain" {
   
 
   tags = {
-    environment = "Production",
+    environment = "Produzione",
     department = "ICS"
   }
 }
