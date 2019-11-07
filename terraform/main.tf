@@ -3,6 +3,7 @@
 terraform {
     backend "remote" {
         organization = "InsightItaly"
+        
 
         workspaces {
             name = "TerraformLab"
@@ -16,4 +17,3 @@ provider "azurerm" {
     client_secret = "${var.TF_VAR_CLIENT_SECRET}"
     tenant_id = "${var.TF_VAR_TENANT_ID}"
 }
-
